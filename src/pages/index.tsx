@@ -9,49 +9,66 @@ import styles from '../styles/pages/Home.module.css'
 
 import { GetServerSideProps } from 'next'
 import { ChallengesProvider } from '../contexts/ChallengesContext';
+import { UserContext, UsersProvider } from '../contexts/UserContext';
+import { useContext } from 'react';
+import UserPage from './userPage';
 
 interface HomeProps {
   level : number
   currentExperience : number
   challengesCompleted :number
+  userName : string
 }
 
 export default function Home(props:HomeProps) {
   return (
-    <ChallengesProvider 
-      level = {props.level}
-      currentExperience = {props.currentExperience}
-      challengesCompleted = {props.challengesCompleted}
-    >
-      <div className={styles.container}>
 
-        <Head>
-          <title>Início | Move.it</title>
-        </Head>
-      <ExperienceBar/ >
-      <CountdownProvider>
-        <section>
-          <div>
-            <Profile/>
-            <CompletedChallenges/>
-            <Countdown/>
-          </div>
-          <div>
-            <ChalllengeBox/>
-          </div>
-
-        </section>
-      </CountdownProvider>
-      </div>
-    </ChallengesProvider>
+    <div>
+      { false ?(
+        <ChallengesProvider 
+        level = {props.level}
+        currentExperience = {props.currentExperience}
+        challengesCompleted = {props.challengesCompleted}
+      >
+        <div className={styles.container}>
+  
+          <Head>
+            <title>Início | Move.it</title>
+          </Head>
+        <ExperienceBar/ >
+        <CountdownProvider>
+          <section>
+            <div>
+              <Profile/>
+              <CompletedChallenges/>
+              <Countdown/>
+            </div>
+            <div>
+              <ChalllengeBox/>
+            </div>
+  
+          </section>
+        </CountdownProvider>
+        </div>
+      </ChallengesProvider>
+      ):(
+          <UsersProvider > 
+            <UserPage></UserPage>
+          </UsersProvider>
+       
+      )}
+   </div>
+   
+    
   )
 }
 
 export const getServerSideProps:GetServerSideProps = async (ctx) => {
-  const {level,currentExperience,challengesCompleted} = ctx.req.cookies
+  const {level,currentExperience,challengesCompleted,userName } = ctx.req.cookies
   return {
     
-    props: { 
+    props: {
+      userName,
       level:Number(level),
       currentExperience:Number(currentExperience),
       challengesCompleted:Number(challengesCompleted),
