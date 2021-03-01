@@ -1,14 +1,10 @@
 # Move.it
 
 <p>
-  <img src="https://img.shields.io/badge/made%20by-RAFAEL%20MARTINS-6E40C9?style=flat-square">
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/martins-rafael/moveIt?color=6E40C9&style=flat-square">
   <img alt="GitHub Top Language" src="https://img.shields.io/github/languages/top/martins-rafael/moveIt?color=6E40C9&style=flat-square">
   <a href="https://opensource.org/licenses/MIT">
     <img alt="License" src="https://img.shields.io/badge/license-MIT-6E40C9?style=flat-square">
-  </a>
-  <a href="https://github.com/martins-rafael/moveIt/commits/master">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/martins-rafael/moveIt?color=6E40C9&style=flat-square">
   </a>
 </p>
 
@@ -91,5 +87,5 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](/LICENSE) para m
 
 Feito com :purple_heart: by [Matheus Parro](https://github.com/matheusparro)
 
-[![Linkedin Badge](https://img.shields.io/badge/-Rafael%20Martins-6E40C9?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/matheus-parro-838988196/)](https://www.linkedin.com/in/matheus-parro-838988196/) 
+[![Linkedin Badge](https://img.shields.io/badge/-Matheus%20Parro-6E40C9?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/matheus-parro-838988196/)](https://www.linkedin.com/in/matheus-parro-838988196/) 
 [![Gmail Badge](https://img.shields.io/badge/-mathparro@gmail.com-6E40C9?style=flat-square&logo=Gmail&logoColor=white&link=mailto:mathparro@gmail.com)](mailto:mathparro@gmail.com)
