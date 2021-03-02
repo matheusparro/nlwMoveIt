@@ -1,13 +1,5 @@
 # Move.it
 
-<p>
-  <a href="https://opensource.org/licenses/MIT">
-    <img alt="License" src="https://img.shields.io/badge/license-MIT-6E40C9?style=flat-square">
-  </a>
-</p>
-
-<img align="right" src=".github/icon.svg" width="35%" alt="Move.it">
-
 ## Tópicos 
 
 [Sobre o Move.it](#sobre-o-move.it)
@@ -25,12 +17,6 @@
 O Move.it é um App que utiliza a técnica de [pomodoro](https://pt.wikipedia.org/wiki/T%C3%A9cnica_pomodoro), com o objetivo de melhorar sua produtividade e foco. Desenvolvido durante a Next Level Week #4 da [Rocketseat](https://rocketseat.com.br/).
 
 <br>
-
-<p align="center">
-  <a href="https://www.figma.com/file/n9J6604nMGB7Cgt2vEVtWb/Move.it-1.0-Dark-Mode">
-    <img alt="Figma" src="https://img.shields.io/badge/figma%20-%236E40C9.svg?&style=for-the-badge&logo=figma&logoColor=white"/>
-  </a>
-</p>
 
 <br>
 
